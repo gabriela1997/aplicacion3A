@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/p1.png','imagenes/c1.png','imagenes/c4.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  </div>
+  <div data-role="main" class="ui-content">
+ <div>
+  <center></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/p1.png',1)"><img src="imagenes/c1.png" width="419" height="279" id="Image9"></a><
+  </center> 
+  </div>
+  </div>
+  
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>UBICACION</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>DIMENSION</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DEPENDENCIAS QUE LO MONITOREAN</h2>
+   </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>MEDIDAS PREVENTIVAS</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>VOLCAN DE COLIMA</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>ACTIVIDAD DEL VOLCAN DE COLIMA</h2>
+       </a>
+     </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion tres</h4>
+     <h4>Gabriela Juarez Aguilar</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Donde se localiza el volcán popocatápetl?</h1>
+  </div>
+ <div data-role="content" align="justify">
+  <div>
+     <h2><p>El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.</p>
+
+<p>En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+
+Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.</p>
+
+Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.</h2>
+<center><img src="imagenes/p3.png" width="500" height="552"></center>
+  </div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Gabirla Juárez Aguilar</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Dimension </h1>
+ </div>
+  <div data-role="content" align="justify">
+ <div>
+ <h2><p>El Popocatépetl forma el término austral de la Sierra Nevada. A partir de él, se desprenden hacia el poniente las serranías de Ajusco. Gran número de las erupciones del Popocatépetl han tenido lugar por su conducto, a lo que se debe su gran profundidad, las dimensiones del volcán y su altura. Sus solfataras, en vías de extinción, demuestran su actividad actual.</p>
+ <p>El Popocatépetl es la segunda altura de la República Mexicana (5 452 m), después del Pico de Orizaba. Está separado del Iztaccíhuatl por una depresión, donde el Puerto de Pelagallinas es el paso mas bajo. Se encentra el volcán a 88 km al oriente de la ciudad de Mexico y sirve de límite a los estados de México, Puebla y Morelos.</p>
+<center><img src="imagenes/p2.png" width="500" height="480"></center>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false"> 
+  <h1>Pueblos cercanos</h1>
+     <div>
+ <p>El rancho de Tlamacas, en la falda del Popocatépetl, a una altura de 3 897 m, queda casi en el límite de la vegetación arborescente. En su ascención, los abetos le siguen la arena negra azulosa y matorrales.   En la Cruz comienza la cúpula de nieve, situada a 4 300 m sobre el nivel del mar. En la Cresta hay dos cimas:
+el Espinazo del Diablo y el Pico Mayor.</p>
+<p>El cráter del Popocatépetl es elíptico, de 850 m de eje mayor y de 750 m de eje menor, con una profundidad de 250 a 300 m. En el fondo de su cráter existen varias fumarolas que sirven de respiradero al volcán, capas de rocas traquíticas muy compactas, basaltos, escorias porosas cargadas de óxido de hierro, abundantes depósitos de azufre y de ácido sulfhídrico. En el interior del cráter, que es de paredes verticales. tienen lugar constantes derrumbes, y esta lleno de rampas y de lomas.</h2></p></div>
+ <div data-role="footer" data-theme="a">
+ <h4>Gabriela Juarez Aaguilar</h4>
+ </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Dependencia donde lo monitorean</h1>
+ </div>
+ <div data-role="content" align="justify">
+ <div>
+<h2><p>La primera estación de monitoreo sísmico fue colocada en julio de 1987 por el Instituto de Ingeniería de la UNAM; se ubicó en el cerro Altzomoni a cuatro kilómetros al norte de Paso de Cortés. En septiembre de 1989 el Departamento de Vulcanología del Instituto de Geofísica de la UNAM comienza la operación de una segunda estación en el cerro Tlamacas, que forma parte de la red sísmica del Servicio Sismológico Nacional.</p>
+  <center><img src="imagenes/p8.png" width="272" height="253"></center>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Monitoreo</h1>
+     <div>
+  <p>La única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible, en la mayoría de los casos, detectar oportunamente un cambio cualitativo y cuantitativo de la actividad que inclusive pudiese conducir a una predicción en el corto plazo de un proceso eruptivo inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido. Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl. En un esfuerzo conjunto del Centro Nacional de Prevención de Desastres (CENAPRED), de la Secretaría de Gobernación, los Institutos de Geofísica y de Ingeniería , de la UNAM , y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey, se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.</p>
+   <center><img src="imagenes/p5.png" width="301" height="246"></center>
+<p>Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. La instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, análisis químicos y determinación de las concentraciones de gases SO2 y CO2. Más de 50 señales de telemetría son trasmitidas en forma continua hacia un puesto central de registro y procesamiento localizado en el CENAPRED. Allí y mediante una extensa red de computadoras, la actividad es monitoreada y procesada las 24 horas del día. Al detectarse cualquier incremento anormal de la actividad sísmica del volcán, se activa un sistema de alarma acústica y a través de un sistema de marcado automático se envian mensajes a teléfonos particulares celulares y localizadores del personal de guardia . Del análisis de la información, las recomendaciones relativas al nivel de alertamiento son tomadas por el Comité Técnico Científico Asesor, integrado por eminentes investigadores de la UNAM y del CENAPRED. Mediante reportes especiales, autoridades del gobierno y de Protección Civil son informadas periódicamente acerca del nivel de actividad del volcán. Para el público en general se dispone de un buzón telefónico con mensajes sobre su estado de actividad.</p>
+<p>Con la participación de diversas instituciones y un enorme esfuerzo realizado por parte del personal encargado, se ha logrado en un plazo corto, poner en operación una extensa infraestructura de registro y monitoreo que permite ya la vigilancia estrecha del volcán así como la detección oportuna de cualquier cambio en su estado de actividad.</h2></p>
+</div>
+ </div>
+<div data-role="footer" data-theme="a">
+  <h4>Gabirla Juárez Aguilar</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Medidas Preventivas</h1>
+ </div>
+ <div data-role="content" align="justify">
+ <div><!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:1020px;height:409px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ <h2><p>Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.</p><center><img src="imagenes/p6.png" width="50%" height="50%"></center>
+<p>Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.<P>
+<p> Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protecciónLa ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.</p> </h2>
+ <center><img src="imagenes/p7.png" width="50%" height="50%"></center>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Gabriela Juarez Aguilar</h4>
+ </div>
+ </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>HISTORIA</h1>
+ </div>
+ <div data-role="content" align="justify">
+ <div>
+ <h2><p>Cuentan las leyendas que hace mucho tiempo, el rey coliman vivía en una gran mansión y era una persona muy importante en Colima.
+Un día tuvo una discusión con el virrey de España y este mando a rodear la mansión, impidiendo que entraran o salieran.</p>
+<center><img src="imagenes/c3.png" width="50%" height="50%"></center>
+ El rey sabiendo que si se quedaban dentro de la mansión morirían, decidió escapar una noche, llevándose consigo a sus doncellas y guerreras.
+Cuando pasaban por el volcán de Colima fueron descubiertos por los españoles, sabiendo que serían torturados, todos decidieron arrojarse al volcán. Desde entonces se dice que cada vez que los descendientes del rey coliman son agredidos, el volcán ruge. </h2>
+ <center><img src="imagenes/c4.png" width="50%" height="50%"></center>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Gabriela Juarez Aguilar</h4>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Actividad del volcan de colima</h1>
+ </div>
+<div data-role="content" align="justify">
+ <h2><p>Los municipios aledaños del volcán son Comala y Cuauhtémoc, en Colima, y Tuxpan, Zapotitlan y Tonila, en Jalisco. Se trata de un estratovolcán cuyas erupciones se han considerado explosivas.</p>
+
+<p>Explosiones</p>
+<p>A lo largo de 500 años, el volcán ha tenido más de 40 explosiones desde 1576, de entre las cuales destacan las de 1585, 1606, 1622, 1690, 1818, 1890, 1903, 1913 (el 13 de enero de ese año se cerró el cuarto ciclo de actividad) y 1999. El 6 de junio del 2005, a las 11.00 (hora local), se produjo una columna eruptiva que alcanzó 4 km sobre el volcán, arrojó cenizas de roca y piroclastos, y desde principios de enero del 2013 se ha clasificado en actividad creciente (se produjo una explosión estruendosa el día 29). Su ciclo eruptivo es de aproximadamente 100 años; en 2015 comenzó a presentar un aumento en su actividad que está en constante vigilancia.</p>
+<center><img src="imagenes/c5.png" width="50%" height="50%"></center>
+<p>Poblaciones en riesgos</p>
+<p>Adicionalmente, se debe tener en cuenta la actividad de menor grado, todo lo cual demuestra que a lo largo de los últimos siglos este volcán ha incrementado su proceso eruptivo, y se siguen estudiando los riesgos de una nueva erupción. En los estados de Colima y Jalisco, varias poblaciones son vulnerables ante una posible erupción. El depósito de flujos piroclásticos, lluvia de pómez y cenizas y de flujos de lodo o lahares podrían afectar en primera instancia a las poblaciones de La Yerbabuena, La Becerrera, Barranca del Agua, Rancho El Jabalí, Suchitlán, San Antonio y Rancho la Joya, en el estado de Colima, además de Juan Barragán, Agostadero, Los Machos, El Borobollón, Durazno, San Marcos, Tonila, Cofradía de Tonila, Causentla, El Fresnal, Atenguillo, Saucillo, El Embudo y El Chayán, en el estado de Jalisco, y en segundo término a otras poblaciones de ambos estados un poco más alejadas, como Quesería, Ciudad Guzmán, Tuxpan, la ciudad de Colima, Villa de Álvarez, Comala y Cuauhtémoc, entre otras.</p>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false"> 
+  <h1>Años de actividad del volcan</h1>
+     <div>
+<p>1991
+El volcán de Colima entró en una actividad tan grande que se creó un domo que casi cubre la boca. Entonces acudieron a Colima vulcanólogos y temiendo una fuerte explosión comenzaron a poner en alerta máxima a todas las poblaciones aledañas al coloso. Se dijo entonces que el riesgo era tan grande que de hacer explosión el daño alcanzaría hasta 15 kilómetros alrededor. Entonces se produjo una explosión que destruyó el domo y hubo emisiones de ceniza que cubrieron los pueblos aledaños como Tonila, San Marcos, Juan Barragán y La Becerrera.</p>
+<center><img src="imagenes/c6.png" width="50%" height="50%"></center>
+<p>En 2005
+Durante 2005 el volcán de Colima presentó una actividad explosiva que no superó el VEI 3. Se caracterizó por el desarrollo de domos y su destrucción casi inmediata, a través de explosiones que formaron columnas eruptivas que alcanzaron alturas entre los 4500 y 9000 msnm, así como el desarrollo de flujos piroclásticos que alcanzaron hasta 3.5 km de distancia del cráter. Tras los eventos explosivos, se generaron emisiones de ceniza que se distribuyeron en general hacia los cuatro puntos cardinales, y alcanzaron distancias de hasta 100 km.
+Formación de cráter volcánico
+Como consecuencia de esta última, se formó un cráter que alcanzó en ocasiones una profundidad de hasta 60 m. La actividad fue en aumento, por lo que los gobiernos de los estados circunvecinos han estado en extrema vigilancia de la actividad volcánica.</p>
+
+<p>Del 2013 a la fecha
+El 7 de enero del 2013 se produjo una explosión que generó una columna de ceniza volcánica que se elevó a más de 3 km de altura.</p>
+
+<p>El 21 de noviembre de 2012 se registró una gran explosión que generó una columna de ceniza volcánica que se elevó más de 3 km de altura. Asimismo, produjo una avalancha de flujo piroclástico que no causó daños a la población aledaña. Cabe recordar que fue este suceso lo que destruyó ciudades como Pompeya y Herculano cuando el monte Vesubio arrojó, en la Antigüedad, gran cantidad de flujo piroclástico, 5 veces más caliente que el agua hirviendo, lo que destruyó los tejidos blandos de las personas que no lograron escapar.</p>
+<center><img src="imagenes/c7.png" width="50%" height="50%"></center>
+<p>Una de las erupciones que tuvo repercusiones en la actividad diaria de las personas fue sin duda la registrada el 3 de enero del 2015 a las 10:00 aproximadamente (hora de la Ciudad de México), la cual tuvo una explosión que alcanzó 3 km, y la ceniza arrojada se expandió a Mazamitla, Zapotiltic, Ciudad Guzmán, Tonila, Tamazula de Gordiano y Valle de Juárez, todas ellas localizadas en el estado de Jalisco.</p>
+
+<p>El 16 de enero del 2015 se produjo una columna eruptiva, que arrojó cenizas de roca y flujos piroclásticos. El 21 de enero del 2015 (fecha en que se conmemora el aniversario de un terremoto en el propio territorio colimense) se produjo una columna eruptiva que se alzó 4 km. El viernes 10 de julio del 2015 se presentó una erupción mayor, que obligó a evacuar poblaciones en las zonas contiguas al volcán. </p>
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/c4.png',1)"><img src="imagenes/c2.png" width="1024" height="682" id="Image"></a>
+</center>
+<br>
+<br>
+<br>
+consulta esta pagina para saber un poco mas del volcan de colima:
+<a href="http://www.informador.com.mx/jalisco/2016/646148/6/volcan-el-colima-registra-nuevo-cuerpo-de-lava-en-crater.htm">http://www.informador.com.mx/jalisco/2016/646148/6/volcan-el-colima-registra-nuevo-cuerpo-de-lava-en-crater.htm</a>
+ <div data-role="footer" data-theme="a">
+ <h4>Gabriela Juarez Aguilar</h4>
+ </div>
+</div>
+</body>
+</html>
